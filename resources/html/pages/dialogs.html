@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="../../static/css/index.css">
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<div class="wrap" id="app">
+    {{ template "header.html" }}
+    <div class="chats">
+        {{ range .dialogs }}
+        <p><a href="/messenger/{{ .Id }}#bottom"><button>{{ .Name }}</button></a></p>
+        {{ else }}
+        <p>There is nobody but you!</p>
+        {{ end }}
+    </div>
+    {{ template "footer.html" }}
+</div>
+<script src="../../static/js/main/index.js"></script>
+</body>
+</html>

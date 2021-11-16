@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../static/css/login.css">
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<div class="wrap" id="app">
+    {{ template "header.html" }}
+    <div class="form">
+        <form :action="chooseLogin === 'choosed' ? '/auth/log-in' : '/auth/sign-up'" method="POST">
+            <div class="switch">
+                <div :class="chooseLogin"><a @click="chooseLogin = 'choosed'; chooseSignup = ''">Log in</a></div>
+                <div :class="chooseSignup"><a @click="chooseSignup = 'choosed'; chooseLogin = ''">Sign up</a></div>
+            </div>
+            <input type="text" name="username" placeholder="Username" @input="newUsername($event.target.value)">
+            <input type="password" name="password" placeholder="Password" @input="newPassword($event.target.value)">
+            <input type="submit" value="Enter" v-if="show">
+        </form>
+    </div>
+    {{ template "footer.html" }}
+</div>
+<script src="../../static/js/main/login.js"></script>
+</body>
+</html>

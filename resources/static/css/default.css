@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+header {
+    color: white;
+    text-align: center;
+    background-color: mediumblue;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 50%;
+    align-self: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+}
+
+footer {
+    color: mediumblue;
+    text-align: center;
+}
+
+html, body, .wrap {
+    height: 100%;
+    overflow: hidden;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+a:active, a:hover, a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+body {
+    background-image: url("../../static/images/bg.jpg");
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,50 @@
+@import url(default.css);
+
+.chats {
+    flex-grow: 1;
+    margin: 0 auto;
+    padding: 30px 0;
+    margin-top: 100px;
+}
+
+p {
+    font-size: larger;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.chats-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.chats-user {
+    /*text-align: center;*/
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+html, body, .wrap {
+    overflow: visible;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    width: 50%;
+}
+
+html ::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    font-size: larger;
+    color: white;
+    border: none;
+    background-color: mediumblue;
+}
+
+button:hover {
+    background-color: royalblue;
+}

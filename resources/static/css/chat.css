@@ -1,0 +1,130 @@
+@import url(default.css);
+
+.messages {
+    flex-grow: 1;
+    margin: 0 0;
+    /*text-align: center;*/
+    /*border: solid 1px red;*/
+    /*overflow: scroll;*/
+    /*overflow: scroll;
+    -ms-overflow-style: none;*/
+    margin-top: 100px;
+}
+
+/*.messages ::-webkit-scrollbar {
+    display: none;
+}*/
+
+html, body, .wrap {
+    overflow: visible;
+    height: 99.2%;
+}
+
+.form {
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.messages-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+}
+
+.messages-message {
+    /*border: solid 1px black;*/
+    margin-bottom: 25px;
+}
+
+.sender {
+    color: red;
+    font-size: large;
+}
+
+.time_sent {
+    color: grey;
+    font-size: xx-small;
+}
+
+p {
+    margin: 0;
+}
+
+.text {
+    margin-top: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    height: 34px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    width: 50%;
+}
+
+input[type="text"] {
+    width: 200%;
+}
+
+input[type="submit"] {
+    font-size: larger;
+    color: white;
+    background-color: mediumblue;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[type="submit"]:hover {
+    background-color: royalblue;
+}
+
+header {
+    position: fixed;
+    width: 50%;
+}
+
+.go-back {
+    text-align: center;
+    /*border: 1px solid red;*/
+    margin-top: 20px;
+}
+
+html ::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    color: white;
+    border: none;
+    background-color: mediumblue;
+    padding: 3px;
+    font-size: larger;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: royalblue;
+}
+
+.go-back button {
+    /*border: 1px solid red;*/
+    width: 170px;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input {
+    height: 50px;
+    border: 1px solid darkblue;
+    border-radius: 0;
+}

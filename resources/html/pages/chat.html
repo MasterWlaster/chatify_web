@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../static/css/chat.css">
+    <script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<div class="wrap" id="app">
+    {{ template "header.html" }}
+    <div class="messages">
+        <div class="messages-content">
+            {{ range .messages }}
+            <div class="messages-message">
+                <div class="sender">{{ .sender_username }}</div>
+                <vue-date v-bind:v="{{ .time_sent }}"></vue-date>
+                <div class="text">{{ .text }}</div>
+            </div>
+            {{ else }}
+            <div class="sender">Say Hello!</div>
+            {{ end }}
+        </div>
+    </div>
+    <div class="form">
+        <form action="/messenger/{{ .id }}" method="POST">
+            <input type="text" name="text" placeholder="Message..." @input="show = !($event.target.value === '')">
+            <input type="submit" value="Send" v-if="show">
+        </form>
+    </div>
+    <div class="go-back">
+        <a href="/messenger">
+            <button> << To all dialogs </button>
+        </a>
+    </div>
+    {{ template "footer.html" }}
+    <a name="bottom"></a>
+</div>
+<script src="../../static/js/main/chat.js"></script>
+</body>
+</html>

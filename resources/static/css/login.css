@@ -1,0 +1,70 @@
+@import url(default.css);
+
+.form {
+    flex-grow: 1;
+    margin: 0 auto;
+    width: 350px;
+    padding: 100px 0;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 50px;
+    border: 1px solid darkblue;
+    border-radius: 0;
+}
+
+input[type="password"] {
+    border-top: none;
+}
+
+input[type="submit"] {
+    font-size: larger;
+    color: white;
+    border-top: none;
+    background-color: mediumblue;
+}
+
+input[type="submit"]:hover {
+    background-color: royalblue;
+}
+
+.switch {
+    display: flex;
+    font-size: larger;
+    justify-content: space-between;
+    background-color: royalblue;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+}
+
+.choosed {
+    border: solid darkblue 1px;
+    background-color: mediumblue;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom: none;
+}
+
+.switch div {
+    width: 50%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 5px;
+}
+
+.middle {
+    background-color: mediumblue;
+    height: 1px;
+}
+
+.bottom {
+    background-color: mediumblue;
+}
